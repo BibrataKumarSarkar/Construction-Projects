@@ -1,0 +1,266 @@
+// Get in touch Section
+.git-wrapper {
+    &.style1 {
+        padding: 60px;
+        border-radius: 20px;
+        @include breakpoint(max-xl) {
+            padding: 30px;
+        }
+        @include breakpoint (max-xs) {
+            padding: 10px;
+        }
+        .contract-info {
+            margin-top: 42px;
+            .items {
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                background-color: #2b2b2b;
+                padding: 20px 30px;
+                gap: 25px;
+                margin-bottom: 20px;
+
+                .icon {
+                    width: 57px;
+                    height: 57px;
+                    line-height: 57px;
+                    text-align: center;
+                    background: #525252;
+                    border-radius: 50%;
+                    @include breakpoint(max-xs) {
+                        display: none;
+                    }
+
+                    i {
+                        color: #FFF;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                    }
+                }
+
+                h4{
+                    color: $white;
+                    font-family: "DM Sans";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                    width: 82px;
+                    @include breakpoint (max-xxsmall) {
+                        font-size: 18px;
+                    }
+                }
+
+                p, a {
+                    color: $white;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    @include breakpoint (max-xxsmall) {
+                        font-size: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.style2 {
+        position: relative;
+        margin-bottom: 325px;
+
+        @include breakpoint (max-xl) {
+            margin-bottom: 70px;
+            padding-left: 30px;
+        }
+
+        .git-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .git-inner {
+            display: flex;
+            gap: 380px;
+
+            @include breakpoint(max-xxxl) {
+                gap: 200px;
+            }
+
+            @include breakpoint (max-xxl) {
+                gap: 85px;
+            }
+
+            @include breakpoint (max-xl) {
+                gap: 0;
+                flex-direction: column;
+            }
+
+            .thumb {
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .git-content {
+                padding: 141px 0 130px 0;
+
+                @include breakpoint(max-lg) {
+                    padding: 70px 0;
+                }
+
+                @include breakpoint(max-md) {
+                    padding: 40px 0;
+                }
+
+                .title-content {
+                    .sub-title {
+                        color: $title-color;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 27.96px;
+                        letter-spacing: 1.2px;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                        display: inline-block;
+                    }
+
+                    h2 {
+                        max-width: 505.48px;
+                        color: $title-color;
+                        font-size: 59.766px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 57.6px;
+                        letter-spacing: -1.2px;
+                        text-transform: capitalize;
+                        margin-bottom: 34px;
+
+                        @include breakpoint (max-xxl) {
+                            font-size: 48px;
+                        }
+                    }
+                }
+
+                .company-contact-menu {
+                    .contact-item {
+                        margin-top: 23px;
+                        display: flex;
+                        gap: 15px;
+
+                        .icon {
+                            width: 48px;
+                            height: 48px;
+                            line-height: 48px;
+                            text-align: center;
+                            background-color: $white;
+                            border-radius: 50%;
+
+                            i {
+                                color: $theme-color;
+                            }
+                        }
+
+                        .titles {
+                            margin-top: 8px;
+
+                            p {
+                                color: #565969;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
+                        }
+
+                        a {
+                            color: $title-color;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 24px;
+
+                            @include breakpoint (max-xxsmall) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        h4 {
+                            color: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .git-form {
+            position: absolute;
+            top: 306px;
+            left: 365px;
+
+            @include breakpoint (max-xxxl) {
+                left: 200px;
+            }
+
+            @include breakpoint (max-xxl) {
+                left: 120px;
+            }
+
+            @include breakpoint (max-xl) {
+                position: relative;
+                left: 0;
+                top: -30px;
+
+            }
+        }
+    }
+
+    &.style3 {
+        .thumb {
+            img {
+                @include breakpoint(max-xl) {
+                    display: none;
+                }
+            }
+        }
+
+        .git-form {
+            background: $title-color;
+            padding: 120px 0 237px 80px;
+            margin-left: -61px;
+
+            @include breakpoint(max-xxl) {
+                padding: 120px 0 237px 61px;
+            }
+
+            @include breakpoint(max-xxs) {
+                padding: 60px 0 160px 61px;
+            }
+
+            .title {
+                margin-bottom: 30px;
+
+                h2 {
+                    color: #FFF;
+                    font-size: 36.563px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+
+                    @include breakpoint(max-xl) {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .btn-wrapper {
+                margin-top: 10px;
+            }
+        }
+    }
+}

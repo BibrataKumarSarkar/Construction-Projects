@@ -1,0 +1,118 @@
+.project-details-wrapper {
+    .project-details-info {
+        .thumb {
+            margin-bottom: 40px;
+
+            img {
+                max-width: 100%;
+                border-radius: 20px;
+            }
+        }
+
+        .content {
+            margin-bottom: 60px;
+
+            h2 {
+                color: $title-color;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: #565969;
+
+                span {
+                    margin: 20px 0;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .project-details-card {
+            display: flex;
+            gap: 20px;
+            @include breakpoint (max-lg){
+                flex-direction: column;
+                row-gap: 30px;
+            }
+            .project-item {
+                .thumb {
+                    margin-bottom: 30px;
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 20px;
+                    }
+                }
+
+                .content {
+                    margin-bottom: 30px;
+
+                    h3 {
+                        color: #131313;
+                        font-family: "DM Sans";
+                        font-size: 36.563px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 30px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                ul {
+                    li {
+                        color: #565969;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        .slider-btn {
+            background: #EFEFEF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+            margin-top: 40px;
+            padding: 20px 40px;
+
+            .left-btn {
+                a {
+                    color: $title-color;
+                    font-family: "DM Sans";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                    @include breakpoint (max-xxsmall){
+                        font-size: 13px;
+                    }
+                    i {
+                        margin-right: 14px;
+                    }
+                }
+            }
+
+            .right-btn {
+                a {
+                    color: $title-color;
+                    font-family: "DM Sans";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                    @include breakpoint (max-xxsmall){
+                        font-size: 13px;
+                    }
+                    i {
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

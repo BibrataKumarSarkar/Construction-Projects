@@ -1,0 +1,185 @@
+/*----------------------------------------------
+    # Service style here
+----------------------------------------------*/
+
+.service-wrapper {
+    &.style4 {
+        .title-section {
+            .title-content {
+                max-width: 630px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Project style here
+----------------------------------------------*/
+
+.project-wrapper {
+    &.style3 {
+        .title-section {
+            &.style1 {
+                .title-content {
+                    margin-bottom: 60px;
+                    max-width: 741px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Faq style here
+----------------------------------------------*/
+
+.faq-wrapper {
+    &.style3 {
+        .thumb {
+            img {
+                max-width: 100%;
+
+                @include breakpoint(max-xl) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Cta style here
+----------------------------------------------*/
+
+.cta-wrapper {
+    &.style1 {
+        margin-top: -110px;
+        position: relative;
+
+        .cta-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+            background: $white;
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            padding: 60px;
+
+            @include breakpoint(max-lg) {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                padding: 30px;
+            }
+
+            h2 {
+                color: $title-color;
+                font-size: 59.766px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 57.6px;
+                letter-spacing: -1.2px;
+                text-transform: capitalize;
+                max-width: 463px;
+
+                @include breakpoint(max-lg) {
+                    text-align: center;
+                }
+
+                @include breakpoint(max-sm) {
+                    font-size: 40px;
+                }
+            }
+
+            .icon {
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .contact-content {
+                @include breakpoint (max-lg) {
+                    text-align: center;
+                }
+
+                p {
+                    color: $title-color;
+                    margin-bottom: 20px;
+                }
+
+                h2 {
+                    color: $title-color;
+                    font-size: 36.563px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # testimonial style here
+----------------------------------------------*/
+
+.testimonial-wrapper {
+    &.style3 {
+        position: relative;
+
+        .main-testimonial {
+            background: $title-color;
+            padding: 60px 0;
+            position: relative;
+            border-radius: 20px;
+            z-index: 9;
+
+            @include breakpoint(max-xl) {
+                padding-right: 20px;
+            }
+        }
+
+        .client-info {
+            text-align: center;
+            margin-top: -244px;
+            margin-left: 60px;
+
+            @include breakpoint (max-xl) {
+                margin-top: 0;
+            }
+
+            @include breakpoint(max-md) {
+                margin-left: 20px;
+            }
+
+            .thumb {
+                margin-bottom: 30px;
+
+                img {
+                    max-width: 100%;
+                    border-radius: 20px;
+                }
+            }
+
+            .content {
+                text-align: center;
+
+                h3 {
+                    text-align: center;
+                    color: $white;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    text-align: center;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

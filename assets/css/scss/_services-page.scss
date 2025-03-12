@@ -1,0 +1,185 @@
+.service-details-wrapper {
+    .contact-bar {
+        border-radius: 20px;
+        background: #EFEFEF;
+        padding: 60px 0;
+        margin-bottom: 40px;
+        @include breakpoint(max-xs) {
+            padding: 36px;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            @include breakpoint(max-xs) {
+                margin-bottom: 20px;
+            }
+            i {
+                width: 96px;
+                height: 96px;
+                line-height: 96px;
+                background: $theme-color;
+                text-align: center;
+                border-radius: 50%;
+                color: $white;
+                font-size: 36px;
+            }
+        }
+        .title {
+            margin-bottom: 20px;
+            h3 {
+                text-align: center;
+                color: $black;
+                margin-bottom: 20px;
+                @include breakpoint(max-xs) {
+                    margin-bottom: 10px;
+                }
+            }
+            p {
+                color: #565969;
+                text-align: center;
+            }
+        }
+        .contact-no {
+            h3 {
+                text-align: center;
+                a {
+                    color: $title-color;
+                    @include breakpoint(max-xsmall) {
+                        font-size: 22.75px;
+                    }
+                }
+            }
+        }
+    }
+    .service-details {
+        .content {
+            margin-bottom: 30px;
+            h2 {
+                color: $title-color;
+                font-size: 59.766px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 57.6px;
+                letter-spacing: -1.2px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+            h3 {
+                color: $title-color;
+                font-size: 36.563px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+            p {
+                color: #565969;
+                font-family: "DM Sans";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                p {
+                    color: #565969;
+                }
+            }
+        }
+        .thumb {
+            img {
+                border-radius: 20px;
+                max-width: 100%;
+                @include breakpoint(max-xl) {
+                    width: 100%;
+                }
+            }
+        }
+        .highlight {
+            margin: 20px 0;
+            p {
+                color: #565969;
+            }
+        }
+        .service-list {
+            display: flex;
+            justify-content: space-between;
+            @include breakpoint(max-xl) {
+                flex-direction: column;
+                row-gap: 30px;
+            }
+            ul {
+                li {
+                    color: #565969;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .builder-info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @include breakpoint(max-xl) {
+                flex-direction: column;
+                row-gap: 30px;
+            }
+            .builder-info-items {
+                border-radius: 20px;
+                border: 1px solid #D0D0D0;
+                background: #FFF;
+                padding: 40px;
+                .contents {
+                    h3 {
+                        color: #131313;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 29.9px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: #565969;
+                        margin-bottom: 20px;
+                    }
+                }
+                ul {
+                    li {
+                        color: #565969;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                        i {
+                            margin-right: 10px;
+                            color: #131313;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+        .services-faq {
+            margin-top: 60px;
+            .title {
+                margin-bottom: 30px;
+                h3 {
+                    color: $title-color;
+                    font-size: 36.563px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
