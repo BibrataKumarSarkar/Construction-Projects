@@ -1,0 +1,332 @@
+.accordion {
+    &.style1 {
+        .accordion-item {
+            border: none;
+            margin-bottom: 25px;
+            background: transparent;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            button {
+                gap: 20px;
+                padding: 0 0 10px 0;
+                border-bottom: 1px solid #D0D0D0;
+                background: transparent;
+
+                span {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: var(--900, #131313);
+                    font-family: "DM Sans";
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+
+                    svg path {
+                        fill: $title-color;
+                    }
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:not(.collapsed) {
+                    color: inherit !important;
+                    background-color: transparent !important;
+                    box-shadow: none !important;
+
+                    .icon-box {
+                        background-color: $theme-color;
+                    }
+                }
+
+                .accordion-button {
+                    &.collapsed {
+                        background: $white;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    padding-top: 20px !important;
+
+                    p {
+                        margin-left: 57px;
+                        color: #565969;
+                        font-family: "DM Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        .accordion-item {
+            border: none;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            button {
+                gap: 20px;
+                background: $white;
+                box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+
+                .icon-box {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: var(--900, #131313);
+                    font-family: "DM Sans";
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+
+                    svg path {
+                        fill: $title-color;
+                    }
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:not(.collapsed) {
+                    color: inherit !important;
+                    background-color: transparent !important;
+                    box-shadow: none !important;
+
+                    .icon-box {
+                        background-color: $theme-color;
+                    }
+                }
+
+                .accordion-button {
+                    &.collapsed {
+                        background: $white;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    padding-top: 20px !important;
+
+                    p {
+                        margin-left: 57px;
+                        color: #565969;
+                        font-family: "DM Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// team icon 
+.icon {
+    &.style1 {
+        position: relative;
+        z-index: 999;
+
+        .share {
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: $theme-color;
+            border-radius: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+            i {
+                color: $white;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+        }
+
+        .socail-icon {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            border-radius: 999px;
+            background: #EFEFEF;
+            padding: 15px 8px;
+            -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        &:hover {
+            .socail-icon {
+                visibility: visible;
+                opacity: 1;
+                bottom: 60px;
+            }
+        }
+    }
+
+    &.style2 {
+        position: relative;
+        z-index: 999;
+
+        .share {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: $theme-color;
+            border-radius: 50%;
+
+            i {
+                color: $white;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+        }
+
+        .socail-icon {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            border-radius: 999px;
+            background: #EFEFEF;
+            padding: 15px 8px;
+            -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        &:hover {
+            .socail-icon {
+                visibility: visible;
+                opacity: 1;
+                bottom: 60px;
+            }
+        }
+    }
+}
+
+// Common Socail Icon
+.social-icon {
+    &.style1 {
+        margin-top: 30px;
+
+        ul {
+            display: flex;
+            gap: 17px;
+            align-items: center;
+
+            li {
+                a {
+                    width: 37.414px;
+                    height: 36.827px;
+                    line-height: 36.827px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.102);
+                    -webkit-transition: background-color all 0.5s ease;
+                    -o-transition: background-color all 0.5s ease;
+                    transition: background-color all 0.5s ease;
+
+                    i {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $white;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        background: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-pagination {
+    display: flex;
+    justify-content: center;
+
+    span {
+        margin-inline-end: 10px;
+
+        a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+            color: $title-color;
+            background: transparent;
+            border: 1px solid #D0D0D0;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            i{
+                color: $theme-color;
+            }
+
+            &:hover {
+                background: $theme-color;
+                color: $white !important;
+                i{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}

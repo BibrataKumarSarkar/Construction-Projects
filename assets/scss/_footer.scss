@@ -1,0 +1,334 @@
+/*----------------------------------------------
+    # Footer style here
+----------------------------------------------*/
+
+.footer-section {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    .footer-shape {
+        position: absolute;
+        top: 0;
+        left: 289px;
+        right: 289px;
+        z-index: 1;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .footer-wrapper {
+        position: relative;
+        z-index: 99;
+        &.style2 {
+            padding: 80px 0 69px 0;
+            .footer-text-slider {
+                position: relative;
+                z-index: 99;
+            }
+            @include breakpoint(max-sm) {
+                padding: 40px 0 69px 0;
+            }
+            .footer-widget {
+                .footer-top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 47px;
+                    border-bottom: 1px solid #1D3353;
+                    margin-bottom: 60px;
+                    @include breakpoint (max-xxsmall) {
+                        flex-direction: column;
+                        row-gap: 20px;
+                    }
+                }
+                .row {
+                    .col-xl-2 {
+                        .footer-single-wid {
+                            margin-left: 87px;
+                            @include breakpoint (max-xl) {
+                                margin-left: 0px;
+                            }
+                            @include breakpoint (max-md) {
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+                &.style1 {
+                    .footer-single-wid {
+                        .thumb {
+                            margin-bottom: 31px;
+                        }
+                        .title {
+                            margin-bottom: 31px;
+                            h3 {
+                                color: $white;
+                            }
+                        }
+                        .content {
+                            position: relative;
+                            p {
+                                color: $white;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
+                            h2 {
+                                color: $white;
+                                font-size: 74px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 84px;
+                                letter-spacing: -1.48px;
+                            }
+                            .shape-1 {
+                                position: absolute;
+                                top: 69px;
+                                right: 166px;
+                                @include breakpoint(max-xxsmall) {
+                                    top: 38px;
+                                    right: 109px;
+                                }
+                            }
+                            .shape-2 {
+                                position: absolute;
+                                top: -3px;
+                                right: 161px;
+                                @include breakpoint(max-xxsmall) {
+                                    top: -24px;
+                                    right: 15px;
+                                }
+                            }
+                            ul {
+                                margin-top: 30px;
+                                li {
+                                    color: $white;
+                                    font-family: "DM Sans";
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                    margin-bottom: 20px;
+                                    @include breakpoint(max-xxsmall) {
+                                        font-size: 15px;
+                                    }
+                                    a {
+                                        color: $white;
+                                        font-family: "DM Sans";
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 24px;
+                                        margin-bottom: 20px;
+                                        @include breakpoint(max-xxsmall) {
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    span {
+                                        width: 40px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        background: #2b2b2b;
+                                        display: inline-block;
+                                        border-radius: 50%;
+                                        margin-right: 15px;
+                                    }
+                                }
+                            }
+                            .footer-menu {
+                                li {
+                                    margin-bottom: 21px;
+                                    &:last-child {
+                                        margin-bottom: 0px;
+                                    }
+                                    a {
+                                        color: $white;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                            .services-list {
+                                li {
+                                    margin-bottom: 20px;
+                                    max-width: 300px;
+                                    a {
+                                        color: $white;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                            h5 {
+                                color: #FFF;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 30px;
+                                opacity: 0.58;
+                                margin-bottom: 30px;
+                                @include breakpoint (max-xxl) {
+                                    font-size: 17px;
+                                }
+                            }
+                            .news-later {
+                                .email-container {
+                                    display: flex;
+                                    align-items: center;
+                                    background-color: $title-color;
+                                    border: 2px solid #1D3353;
+                                    border-radius: 999px;
+                                    padding: 5px;
+                                    width: 300px;
+                                    @include breakpoint (max-xxl) {
+                                        width: 100%;
+                                    }
+                                    .email-input {
+                                        flex: 1;
+                                        border: none;
+                                        outline: none;
+                                        background: transparent;
+                                        color: #fff;
+                                        padding: 10px 6px 10px 30px;
+                                        font-size: 16px;
+                                        @include breakpoint (max-xxl) {
+                                            padding: 18px 6px 18px 17px;
+                                        }
+                                        @include breakpoint(max-xxsmall) {
+                                            padding: 10px 6px 10px 17px;
+                                        }
+                                        &::placeholder {
+                                            color: #888;
+                                        }
+                                    }
+                                    .send-button {
+                                        background-color: #ff6a00;
+                                        border: none;
+                                        outline: none;
+                                        width: 47px;
+                                        height: 48px;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        cursor: pointer;
+                                        i {
+                                            color: #fff;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .footer-contact-menu {
+                            .contact-item {
+                                margin-bottom: 20px;
+                                display: flex;
+                                align-items: center;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                .icon {
+                                    i {
+                                        margin-right: 15px;
+                                        color: $white;
+                                        font-size: 16px;
+                                        font-weight: 900;
+                                        width: 50px;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        text-align: center;
+                                        background: #1D3353;
+                                        border-radius: 50%;
+                                    }
+                                }
+                                .content {
+                                    .titles {
+                                        margin-bottom: 5px;
+                                        p {
+                                            color: $white;
+                                            font-size: 20px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 30px;
+                                        }
+                                    }
+                                    h4 {
+                                        color: $white;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 24px;
+                                    }
+                                    a {
+                                        color: $white;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 24px;
+                                        @include breakpoint(max-xxsmall) {
+                                            font-size: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        .footer-bottom-wrapper {
+            @include breakpoint(max-lg) {
+                flex-direction: column;
+            }
+            P {
+                color: $white;
+                @include breakpoint (max-lg) {
+                    padding-top: 15px;
+                }
+                @include breakpoint(max-xxsmall) {
+                    font-size: 16px;
+                }
+                a {
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+            .footer-services {
+                display: flex;
+                gap: 18px;
+                padding: 30px;
+                @include breakpoint(max-lg) {
+                    padding: 15px;
+                }
+                li {
+                    a {
+                        color: $white;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        @include breakpoint(max-xxsmall) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

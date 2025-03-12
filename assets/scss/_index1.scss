@@ -1,0 +1,450 @@
+/*----------------------------------------------
+    # Services style here
+----------------------------------------------*/
+
+.service-wrapper {
+    &.style1 {
+        .title-section {
+            max-width: 520px;
+            margin: 0 auto 60px auto;
+        }
+
+        .category {
+            border-radius: 20px;
+            border: 1px solid #D0D0D0;
+            background: $white;
+
+            .title {
+                border-radius: 20px 20px 0px 0px;
+                background: $theme-color;
+                padding: 10px 20px;
+                margin-bottom: 30px;
+
+                h4 {
+                    color: $white;
+                    text-align: center;
+                }
+            }
+
+            .category-wid {
+                padding: 0 15px 30px 15px;
+
+                .single-category {
+                    border-radius: 20px;
+                    background: #EFEFEF;
+                    margin-bottom: 25px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        color: $title-color;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        display: inline-block;
+                        padding: 10px 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        .title-section {
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+        }
+
+        .thumb {
+            img {
+                max-width: 100%;
+                border-radius: 20px;
+
+                @include breakpoint(max-lg) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Project style here
+----------------------------------------------*/
+
+.project-wrapper {
+    &.style1 {
+        .title-section {
+            &.style2 {
+                @include breakpoint(max-lg) {
+                    flex-direction: column;
+                    row-gap: 20px;
+                }
+
+                h2 {
+                    @include breakpoint(max-lg) {
+                        max-width: 100%;
+                    }
+                }
+
+                .highlight {
+                    max-width: 475px;
+
+                    @include breakpoint(max-xl) {
+                        max-width: 415px;
+                    }
+
+                    @include breakpoint(max-lg) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Faq style here
+----------------------------------------------*/
+
+.faq-wrapper {
+    &.style1 {
+        .title-section {
+            &.style2 {
+                @include breakpoint(max-lg) {
+                    flex-direction: column;
+                    row-gap: 20px;
+                    align-items: start;
+                }
+
+                .title-content {
+                    max-width: 400px;
+
+                    @include breakpoint(max-lg) {
+                        max-width: 100%;
+                        text-align: start;
+                    }
+
+                    h2 {
+                        @include breakpoint(max-lg) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                .highlight {
+                    max-width: 550px;
+
+                    @include breakpoint(max-lg) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Wcu style here
+----------------------------------------------*/
+
+.wcu-wrapper {
+    &.style1 {
+        padding: 120px 0 642px 0;
+
+        @include breakpoint(max-xl) {
+            padding: 100px 0 642px 0;
+        }
+
+        @include breakpoint(max-lg) {
+            padding: 80px 0 542px 0;
+        }
+
+        .wcu-left-part {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            align-items: center;
+            row-gap: 65px;
+            column-gap: 23px;
+
+            @include breakpoint (max-xxsmall) {
+                grid-template-columns: repeat(1, 2fr);
+            }
+        }
+
+        .wcu-right-part {
+            .thumb-box {
+                position: relative;
+                margin-top: -25px;
+
+                .thumb {
+                    position: relative;
+                    text-align: center;
+
+                    img {
+                        text-align: center;
+                        border-radius: 20px;
+
+                        @include breakpoint(max-xl) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .thumb-content {
+                    position: absolute;
+                    bottom: 7px;
+                    right: 40px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Team style here
+----------------------------------------------*/
+
+.team-wrapper {
+    &.style1 {
+        margin-top: -520px;
+    }
+}
+
+/*----------------------------------------------
+    # Testimonial style here
+----------------------------------------------*/
+
+.testimonial-wrapper {
+    &.style1 {
+        position: relative;
+        padding-bottom: 155px;
+
+        @include breakpoint(max-md) {
+            padding-bottom: 50px;
+        }
+
+        @include breakpoint(max-xs) {
+            padding-bottom: 30px;
+        }
+
+        .title-section {
+            margin-bottom: 60px;
+
+            @include breakpoint(max-md) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .testimonial-slider {
+            width: 740px;
+            height: 504px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            position: relative;
+
+            @include breakpoint(max-lg) {
+                width: 100%;
+            }
+            @include breakpoint(max-xxsmall) {
+                height: 395px;
+            }
+
+            .main-testimonial {
+                border-radius: 20px;
+                background: $white;
+                box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+                padding: 80px;
+                position: relative;
+                z-index: 9999;
+
+                @include breakpoint(max-md) {
+                    padding: 60px;
+                }
+
+                @include breakpoint (max-xxsmall) {
+                    padding: 10px;
+                }
+
+                .testimonial-inner {
+                    border-radius: 20px;
+                    border: 1px solid #D0D0D0;
+                    background: $white;
+                    padding: 40px 30px 140px 40px;
+
+                    @include breakpoint(max-md) {
+                        padding: 40px 30px 40px 40px;
+                    }
+
+                    @include breakpoint(max-xs) {
+                        padding: 10px;
+                    }
+
+                    .content {
+                        h3 {
+                            color: $title-color;
+                            font-size: 26px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 29.9px;
+                            margin-bottom: 5px;
+                        }
+
+                        p {
+                            color: #565969;
+                            margin-bottom: 20px;
+                        }
+
+                        h6 {
+                            color: #565969;
+                            font-size: 26px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 36px;
+                        }
+                    }
+                }
+
+                .icon-shape-1 {
+                    position: absolute;
+                    left: 40px;
+                    top: 40px;
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                    text-align: center;
+                    background-color: $white;
+                    border-radius: 100%;
+
+                    @include breakpoint(max-xs) {
+                        width: 70px;
+                        height: 70px;
+                        line-height: 70px;
+                        top: 20px;
+                        left: 9px;
+
+                        svg {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+
+                    @include breakpoint(max-xxsmall) {
+                        display: none;
+                    }
+                }
+
+                .icon-shape-2 {
+                    position: absolute;
+                    right: 40px;
+                    bottom: 40px;
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                    text-align: center;
+                    background-color: $white;
+                    border-radius: 100%;
+
+                    @include breakpoint(max-xs) {
+                        width: 70px;
+                        height: 70px;
+                        line-height: 70px;
+                        bottom: 20px;
+                        right: 33px;
+
+                        svg {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+
+                    @include breakpoint(max-xxsmall) {
+                        top: -8px;
+                        right: -3px;
+                    }
+                }
+            }
+
+            .swiper-horizontal>.swiper-pagination-bullets,
+            .swiper-pagination-horizontal,
+            .swiper-pagination-fraction {
+                left: -196px;
+                bottom: 85px;
+
+                @include breakpoint(max-md) {
+                    left: 0;
+                    bottom: 40px;
+                }
+            }
+
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+                flex-shrink: 0;
+                display: inline-block;
+                background-color: #D0D0D0;
+                transition: background-color 0.3s;
+                margin: 0 8px;
+                border-radius: 100px;
+                -webkit-transition: background-color 0.3s;
+                -moz-transition: background-color 0.3s;
+                -ms-transition: background-color 0.3s;
+                -o-transition: background-color 0.3s;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                -o-border-radius: 100px;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: $theme-color;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -3px;
+                    top: -3px;
+                    background: transparent;
+                    width: 12px;
+                    height: 12px;
+                    padding: 8px;
+                    border-radius: 100%;
+                    border: 1px solid $theme-color;
+                    display: block;
+                }
+            }
+        }
+
+        .thumb {
+            position: absolute;
+            right: 308px;
+            top: 170px;
+
+            @include breakpoint(max-xl2) {
+                right: 204px;
+            }
+
+            @include breakpoint(max-xxxl) {
+                right: 154px;
+            }
+
+            @include breakpoint(max-xxl) {
+                right: 49px;
+            }
+
+            @include breakpoint(max-lg) {
+                display: none;
+            }
+
+            img {
+                border-radius: 20px;
+                max-width: 100%;
+            }
+        }
+    }
+}

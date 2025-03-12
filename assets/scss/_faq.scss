@@ -1,0 +1,313 @@
+/*----------------------------------------------
+    # Faq style here
+----------------------------------------------*/
+
+.faq-accordion {
+  &.style2 {
+    .faq-item {
+      border-bottom: 1px solid #D0D0D0;
+      margin-bottom: 30px;
+      &:last-child {
+        border-bottom: none;
+      }
+      &.active {
+        border: 1px solid red;
+        border-radius: 30px;
+        .faq-question {
+          padding: 30px 30px 10px 30px;
+          @include breakpoint (max-xxl) {
+            padding: 30px 10px 10px 10px;
+          }
+        }
+        .icon {
+          background: $theme-color;
+          color: $white;
+        }
+        .faq-answer {
+          padding: 0 85px 30px 85px;
+          @include breakpoint (max-sm) {
+            padding: 0 35px 30px 35px;
+          }
+        }
+      }
+    }
+    .faq-question {
+      width: 100%;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      cursor: pointer;
+      outline: none;
+      h4 {
+        color: $title-color;
+        @include breakpoint (max-xxl) {
+          font-size: 17px;
+        }
+        @include breakpoint (max-sm) {
+          font-size: 15px;
+        }
+        @include breakpoint (max-xs) {
+          font-size: 13px;
+          max-width: 200px;
+        }
+        @include breakpoint (max-xxsmall) {
+          font-size: 14px;
+          max-width: 287px;
+          text-align: start;
+        }
+        span {
+          margin-right: 20px;
+          @include breakpoint (max-sm) {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.5s ease;
+      -o-transition: max-height 0.5s ease;
+      transition: max-height 0.5s ease;
+      background: transparent;
+      border-radius: 30px;
+      p {
+        margin: 0;
+        color: $text-color;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        @include breakpoint (max-sm) {
+          font-size: 14px;
+        }
+      }
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: $theme-color;
+      border-radius: 999px;
+      background: #EFEFEF;
+      font-size: 20px;
+      font-weight: 900;
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+.proj-accordion {
+  &.style1 {
+    .proj-accordion-item {
+      background: $white;
+      border: none;
+      margin-bottom: 21px;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: border 0.3s ease;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.proj-active {
+        border: 1px solid $theme-color;
+      }
+      .proj-accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        cursor: pointer;
+        @include breakpoint(max-xxl) {
+          padding: 17px 30px;
+        }
+        .proj-accordion-number {
+          color: $title-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          margin-right: 20px;
+        }
+        .proj-accordion-question {
+          flex: 1;
+          color: $title-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          @include breakpoint(max-sm) {
+            font-size: 14px;
+          }
+        }
+        .proj-accordion-arrow {
+          color: #ff6600;
+          font-size: 20px;
+          transition: transform 0.3s ease;
+          i {
+            color: $title-color;
+          }
+        }
+      }
+      .proj-accordion-body {
+        padding: 0 20px;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, padding 0.3s ease;
+        p {
+          color: #565969;
+          font-family: "DM Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 20px;
+          @include breakpoint(max-xxl) {
+            font-size: 14px;
+          }
+          @include breakpoint(max-sm) {
+            font-size: 12px;
+          }
+        }
+      }
+      &.proj-active {
+        .proj-accordion-body {
+          height: 65px;
+          padding: 0 77px 20px 77px;
+          @include breakpoint(max-sm) {
+            height: 83px;
+            padding: 0 15px 20px 77px;
+          }
+        }
+        .proj-accordion-arrow {
+          svg path {
+            fill: $theme-color;
+          }
+          i {
+            color: $theme-color;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+  &.style2 {
+    .proj-accordion-item {
+      background: $white;
+      border: none;
+      margin-bottom: 21px;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: border 0.3s ease;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.proj-active {
+        border: 1px solid $theme-color;
+      }
+      .proj-accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        cursor: pointer;
+        @include breakpoint(max-xxl) {
+          padding: 17px 30px;
+        }
+        .proj-accordion-number {
+          color: $title-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          margin-right: 20px;
+        }
+        .proj-accordion-question {
+          flex: 1;
+          color: $title-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          @include breakpoint(max-sm) {
+            font-size: 14px;
+          }
+        }
+        .proj-accordion-arrow {
+          color: #ff6600;
+          font-size: 20px;
+          transition: transform 0.3s ease;
+          i {
+            color: $title-color;
+          }
+        }
+      }
+      .proj-accordion-body {
+        padding: 0 20px;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, padding 0.3s ease;
+        p {
+          color: #565969;
+          font-family: "DM Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 20px;
+          @include breakpoint(max-xxl) {
+            font-size: 14px;
+          }
+          @include breakpoint(max-xl) {
+            font-size: 11px;
+          }
+
+          @include breakpoint(max-sm) {
+            font-size: 12px;
+          }
+        }
+      }
+      &.proj-active {
+        background: $theme-color;
+        .proj-accordion-body {
+          height: 65px;
+          padding: 0 77px 20px 77px;
+          @include breakpoint(max-sm) {
+            height: 83px;
+            padding: 0 15px 20px 77px;
+          }
+          p {
+            color: $white;
+          }
+        }
+        .proj-accordion-header {
+          .proj-accordion-number {
+            color: $white;
+          }
+        }
+        .proj-accordion-question {
+          color: $white;
+        }
+        .proj-accordion-arrow {
+          svg path {
+            fill: $theme-color;
+          }
+          i {
+            color: $theme-color;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}

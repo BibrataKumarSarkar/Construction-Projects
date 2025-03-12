@@ -1,0 +1,693 @@
+/*----------------------------------------------
+    # Buttons style here
+----------------------------------------------*/
+
+.gt-btn {
+    &.style1 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: $theme-color;
+        padding: 12px 30px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color-2;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $theme-color !important;
+            border: 1px solid $text-color;
+
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $theme-color;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+
+    &.style2 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $btn-text-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: $white;
+        padding: 12px 30px;
+        border-radius: 999px;
+        border: 1px solid $border-color;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $black !important;
+            border: 1px solid $text-color;
+
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $theme-color;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+
+    &.style3 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $btn-text-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: $theme-color-2;
+        padding: 12px 30px;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $white !important;
+
+            &.gt-btn-icon-3 {
+                &::after {
+                    color: $white;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+
+    &.style4 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: transparent;
+        padding: 12px 30px;
+        border: 1px solid #1D3353;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $white !important;
+
+            &.gt-btn-icon-3 {
+                &::after {
+                    color: $white;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+
+    &.style5 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: $theme-color;
+        padding: 12px 30px;
+        border-radius: 999px;
+        border: 1px solid $border-color;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $black !important;
+            border: 1px solid $text-color;
+
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $black;
+                }
+            }
+
+            &:before {
+                top: -96%;
+                background-color: $theme-color-2;
+            }
+        }
+    }
+
+    &.style6 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $btn-text-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: #EFEFEF;
+        padding: 12px 30px;
+        border-radius: 999px;
+        border: none;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $black !important;
+
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $theme-color;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+
+    &.style7 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        border-radius: 999px;
+        background: $theme-color;
+        filter: drop-shadow(0px 6px 50px rgba(37, 37, 37, 0.05));
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color-2;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $white !important;
+            background: $theme-color-2;
+
+            &.gt-btn-icon-6 {
+                &::after {
+                    color: $black !important;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+    &.style8 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        border-radius: 999px;
+        background: $white;
+        filter: drop-shadow(0px 6px 50px rgba(37, 37, 37, 0.05));
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $theme-color !important;
+            border: 1px solid $text-color;
+
+            &.gt-btn-icon-5 {
+                &::after {
+                    color: $white !important;
+                }
+            }
+
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+
+    &.style9 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: transparent;
+        padding: 12px 30px;
+        border: 1px solid $theme-color;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $black !important;
+            border: 1px solid $text-color;
+
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $black;
+                }
+            }
+
+            &:before {
+                top: -96%;
+                background-color: $theme-color;
+            }
+        }
+    }
+    &.style10 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 999px;
+        background: transparent;
+        padding: 12px 30px;
+        border: 1px solid $white;
+
+        a {
+            color: $white !important;
+            display: inline-block;
+        }
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $black !important;
+            border: 1px solid transparent;
+
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $black;
+                }
+            }
+
+            &:before {
+                top: -96%;
+                background-color: $theme-color;
+            }
+        }
+    }
+   
+
+    &-icon-1 {
+        &::after {
+            content: "\f061";
+            position: relative;
+            color: $white;
+            font-family: "Font Awesome 6 Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-icon-2 {
+        &::after {
+            content: "\f061";
+            position: relative;
+            color: $btn-text-color;
+            font-family: "Font Awesome 6 Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-icon-3 {
+        &::after {
+            content: "\f061";
+            position: relative;
+            color: $theme-color;
+            font-family: "Font Awesome 6 Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-icon-4 {
+        &::before {
+            content: "\f061";
+            position: relative;
+            padding: 12px;
+            text-align: center;
+            border-radius: 50%;
+            background: $theme-color-2;
+            display: inline-block;
+            color: $title-color;
+            font-family: "Font Awesome 6 Pro";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-right: 15px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-icon-5 {
+        &::after {
+            content: "\f061";
+            position: relative;
+            color: $btn-text-color;
+            font-family: "Font Awesome 6 Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+    &-icon-6 {
+        &::after {
+            content: "\f061";
+            position: relative;
+            color: $white;
+            font-family: "Font Awesome 6 Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+}
